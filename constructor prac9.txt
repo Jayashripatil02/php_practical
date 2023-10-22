@@ -1,0 +1,23 @@
+<?php
+class person {
+    public $name;
+    public $age;
+
+    //constructor method
+    public function __construct($name, $age) {
+      $this->name = $name;
+      $this->age = $age;
+      echo "A person object has created.<br>Name: $this->name, <br>Age: $this->age\n";
+    }
+
+    public function sayHello(){
+        echo "Hello,My name is $this->name, and I am $this->age years old.\n";
+    }
+}
+
+//create object
+$person1 = new person("Jayashri", 19);
+$person1->sayHello(); //call object
+$person2 = new person("Mayuri", 21);
+$person2->sayHello();
+?>

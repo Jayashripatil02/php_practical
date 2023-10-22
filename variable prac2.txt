@@ -1,0 +1,12 @@
+<a href="test.php?variablename='ValueofVariable'"> Click here </a>
+<a href="test.php?userId=1"> User </a>
+<a href="test.php?studentId=27"> Student </a>
+<a href="test.php?clientId=9"> Client </a>
+
+
+
+
+<h1> Test Page </h1>
+<?php
+ echo $_GET['clientId'];
+?>

@@ -1,0 +1,22 @@
+<?php
+//set cookies with name, value ,expiray time
+setcookie("user","jayashri",time() + 3600,"/");
+setcookie("launguage","English",time() + 3600,"/");
+
+//display value
+if(isset($_COOKIE["user"]) && isset($_COOKIE["launguage"])){
+    $user = $_COOKIE["user"];
+    $launguage =$_COOKIE["launguage"];
+
+    echo "Welcome , $user<br>";
+    echo "your preferred launguage is $launguage.<br>";
+} else{
+    echo "Cookies are no set.";
+}
+
+//delete cookies
+if(isset($_COOKIES["user"])){
+    setcookies("user","",time() . 3600,"/");
+    echo "the 'user' cookies has been deleted.";
+}
+?>

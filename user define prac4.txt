@@ -1,0 +1,19 @@
+<?php
+//define user-define function
+function calculateFactorial($num) {
+    if ($num == 0){
+        return 1;//factorial 0 is 1
+    } else {
+        $factorial = 1;
+        for ($i = 1; $i <= $num; $i++){
+            $factorial = $factorial * $i;
+        }
+        return $factorial;
+    }
+}
+
+//usage of user denife fnction
+$num = 7; //fact with different number
+$result = calculateFactorial($num);
+echo "The factorial of $num is $result";
+?>
